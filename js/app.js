@@ -68,11 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function enviarFormulario(e) {
         e.preventDefault();
         
-        spinner.classList.add('flex'); //Tailwind flex: Permite centrar el contenido
         spinner.classList.remove('hidden');
 
         setTimeout(() => {
-            spinner.classList.remove('flex');
             spinner.classList.add('hidden');
             resetearFormulario();
 
