@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Funciones
     function validar(e) {
-        const parent = e.target.parentElement;
+        const parent = e.target.parentElement; //= div contenedor
         const input = e.target.id;
         const value = e.target.value;
     
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function enviarFormulario(e) {
         e.preventDefault();
         
-        spinner.classList.add('flex'); //Tailwind flex: Centra el contenido
+        spinner.classList.add('flex'); //Tailwind flex: Permite centrar el contenido
         spinner.classList.remove('hidden');
 
         setTimeout(() => {
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         formulario.reset(); //Los métodos submit(),reset() existen en el elemento <form></form>
         comprobarCampos(campos);
-        eliminarAlertas();
+        eliminarAlertas(); //Utilizado en el botón reset
     }
 
     //--//
